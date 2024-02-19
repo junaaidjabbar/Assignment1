@@ -7,6 +7,9 @@
  Print your message.
 */
 
-let famous_person = "Albert Einstein";
-let message = "A person who never made a mistake never tried anuthing new";
-console.log(`${famous_person} once saind "${message}"`);
+let famous_person: string = "George Eliot";
+let message: string =
+  famous_person +
+  "Once Said, It is never too late to be what you might have been";
+
+console.log(message);

@@ -1,150 +1,99 @@
 "use strict";
 /*
+// Calculate the area of rectangle.
 
-// Question no. 11
-// Names: Store the names of a few of your friends in a array called names.
-// Print each person’s name by accessing each element in the list, one at a time.
+let widht: number = 8;
+let height: number = 8;
 
-/*
-let friendList = [
-  "Muhammad",
-  "Ali",
-  "Usman",
-  "Omer",
-  "Abubakar",
-  "Osama",
-  "Meer",
-];
-friendList[0];
-friendList[1];
-friendList[2];
-friendList[3];
-friendList[4];
+let areaOfRectangle: number = height * widht;
+console.log(areaOfRectangle);
 
-console.log(friendList[0]);
-console.log(friendList[3]);
-*/
-// Question no. 12.
-// Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name,
-// print a message to them. The text of each message should be the same,
-// but each message should be personalized with the person’s name.
-/*
-let friendList = [
-  "Muhammad",
-  "Ali",
-  "Usman",
-  "Omer",
-  "Abubakar",
-  "Osama",
-  "Meer",
-];
-friendList[0];
-friendList[1];
-friendList[2];
-friendList[3];
-friendList[4];
-friendList[5];
+// Calculate the volume of a cube.
 
-const message1: string = "Hello";
+let height1: number = 8;
+let widht1: number = 8;
+let lenght1: number = 8;
 
-console.log(message1, friendList[0]);
-console.log(message1, friendList[1]);
-console.log(message1, friendList[2]);
-console.log(message1, friendList[3]);
-console.log(message1, friendList[4]);
-console.log(message1, friendList[5]);
-*/
-//comparison operator
-/*
-let n = 5;
-console.log(n == 5); // "n" value equal to 5
-console.log(n === 5); // "n"  value equal to 5
-console.log(n != 5); // "n" value not equal to 5
-console.log(n > 8); // "n" value greater than 8
-console.log(n < 8); // "n" value less than 8
-console.log(n >= 8); // "n" value greater than or equal than 8
-console.log(n <= 8); // "n" value less than or equal than 8
-*/
-// logical operator
-/*
-let n = 5;
-console.log(n >= 5 && n < 1);
-console.log(n > 5 && n < 10);
-console.log(n >= 5 || n < 10);
-console.log(n > 5 || n < 10);
-console.log(!(n < 10));
-console.log(!(n > 10));
-*/
-// if, else , else if
-/*
-let n = 6;
-if (n == 5) {
-  console.log("ok");
+let volumeOfCube: number = height1 * widht1 * lenght1;
+console.log(volumeOfCube);
+
+// Check if given number is positive, Negative or Zeor.
+
+let number1: number = 2;
+
+if (number1 == 0) {
+  console.log("Given number is Zeror");
+} else if (number1 > 0) {
+  console.log("Given number is Positive");
 } else {
-  console.log("Not Ok");
+  console.log("Given number is Negative");
 }
 
-let n1 = 30;
+// Check given number is even or odd.
 
-if (n1 == 30) {
-  console.log("ok");
+let x: number = 1;
+
+if (x % 2 == 0) {
+  console.log("Number is Even");
 } else {
-  console.log("Not Ok");
+  console.log("Number is Odd");
 }
-*/
-/*
-let x1 = "where does the people live?";
-let correctAnswer = "Pakistan";
-*/
-/*
-let n2 = 9;
 
-if (n2 == 50) {
-  console.log("Correct!");
-} else if (n2 <= 10) {
-  console.log("Null");
-} else {
-  console.log("Not Recognized");
-}
-*/
-/*
-let n3 = 30;
-if (n3 == 10) {
-  console.log("Ok");
-} else if (n3 == 0) {
-  console.log("Not Allowed");
-} else if (((n3 = -1), (n3 = -10))) {
-  console.log("Typo Error");
-} else if (n3 == 30) {
-  console.log("Wrong");
-} else {
-  console.log("Blanck");
-}
-*/
-/*
-let personName1: string = "Eric";
-let message1: string = "Would you like to learn some Python today?";
+// Person eligigble for to vote base on their age.
 
-console.log(`Hello ${personName1} "${message1}"`);
+let ageOfPerson: number = 17;
+
+if (ageOfPerson >= 19) {
+  console.log("Person is eligible for vote");
+} else {
+  console.log("Person is not eligible for vote");
+}
+
+//  Calculate the result of expression.
+
+let result: number = ((10 + 5) * 3 - 2) / (4 % 3) - 7;
+
+console.log(result);
+/*
+function functionName() {
+  console.log("This is a function");
+}
+
+const functionValue = functionName();
+console.log(functionValue);
 */
-function sum(n1, n2) {
-    console.log(n1 + n2);
+// program to use function
+// Number is prime number or not.  (the anser is 1 is prime number)
+Object.defineProperty(exports, "__esModule", { value: true });
+/*
+function checkPrimeNumber(number3: number) {
+  if (number3 % 2) {
+    console.log("The Number is prime");
+  } else {
+    console.log("The number is not prime");
+  }
 }
-sum(3, 100);
-function sum2(n3, n4) {
-    console.log(n3 / n4);
-}
-sum2(16, 4);
-function sum3(n1, n2) {
-    console.log(n1 + n2);
-    return;
-}
-sum3(4, 4);
-const sum5 = (n1, n2) => {
-    console.log(n1 + n2);
-};
-sum5(3, 40);
-let firstName = "muhammad";
-let lastName = "Ali";
-console.log(`My first name is ${firstName} and my last name is ${lastName}`);
-console.log(10 % 3);
+
+checkPrimeNumber(2);
+checkPrimeNumber(3);
+checkPrimeNumber(101);
+checkPrimeNumber(150);
+checkPrimeNumber(4);
+*/
+// array of student push , pop,  /
+let studentName = ["Omer", "Usman", "Ali", "Hassan", "Hussain"];
+console.log(studentName[0]);
+console.log(studentName[1]);
+console.log(studentName[2]);
+console.log(studentName[3]);
+console.log(studentName[4]);
+let message = "I want to meet you today.";
+console.log(`hello ${studentName}, I want to meet you today`);
+let guestList = [];
+guestList.push("Omer", "Usman", "Ali");
+console.log(studentName[0], "You are invited for dinner");
+console.log(studentName[1], "You are invited for dinner");
+console.log(studentName[2], "You are invited for dinner");
+console.log(studentName[3], "You are invited for dinner");
+console.log(studentName[4], "You are invited for dinner");
+guestList.pop();
